@@ -1,4 +1,9 @@
-function sayHi() {
-  console.log("Hello, this is my first function!");
+function makeTransaction(quantity, pricePerDroid) {
+  pricePerDroid = quantity * pricePerDroid;
+  const message = `You ordered ${quantity} droids worth ${pricePerDroid} credits!`;
+  return message;
 }
-sayHi();
+
+console.log(makeTransaction(5, 3000));
+console.log(makeTransaction(3, 1000));
+console.log(makeTransaction(10, 500));
